@@ -18,4 +18,4 @@
     -Cuatro ()
 
 -Alfabeto:
-    ...
+    [a-zA-Z]
