@@ -1,3 +1,14 @@
+Trabajo Practico II
+Objetivo:  Aplicar los conocimientos teóricos en el diseño de un compilador básico de  Lenguaje de Programacion
+Para ello, cada equipo, definirá un lenguaje básico, compuesto minimamente:
+-	Uno o dos  tipo de dato
+-	Identificadores  con longitud máxima de 16 caracteres.
+-	Los identificadores deberán tener una convención predefinida
+-	Minimo 2 sentencias, debiendo contar con convención de fin de sentencia , y de apertura y cierre.
+-	Cuatro ( 4)  palabras reservadas
+-	Alfabeto a elección del equipo.
+
+
 Primer Entrega: Gramatica Lexica
 a)	Diseñar las  categorías léxicas correspondiente al lenguaje elegido
 b)	Formalizar cada lenguaje regular con Automatas Finitos y Expresiones regulares
