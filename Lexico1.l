@@ -11,7 +11,7 @@ SOY ["soy"]
 GUIONES [-_]
 FIN_IDENTIFICADOR ["$"]
 
-IDENTIFICADORES {SOY}({LETRA}|{DIGITO}|{GUIONES})*{FIN_IDENTIFICADOR}
+IDENTIFICADOR {SOY}({LETRA}|{DIGITO}|{GUIONES})*{FIN_IDENTIFICADOR}
 CONST_INTEGER (-?[1-9][0-9]{0,6})|0
 CONST_BOOL (0|1)
 /* -? significa que puede ser o no negativo, luego comienza del 1 al 9 y por ultimo repite de 0 a 4 veces del 0 al 9 */
