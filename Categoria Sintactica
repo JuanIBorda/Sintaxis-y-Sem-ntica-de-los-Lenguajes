@@ -1,0 +1,51 @@
+<programa> -> inicio <listaSentencias> fin
+
+<listaSentencias> -> <sentencia> {<sentencia>}
+
+<sentencia> -> <identficador> = <expresión>F |
+bold( <listaIdentificadores> )F |
+italic ( <listaIdentificadores> )F
+
+<listaIdentificadores> -> <identificador> {, <identificador>}
+
+<listaExpresiones> -> <expresión> {<expresión>}
+
+<expresión> -> <identificador> {<operadorAditivo> <primaria>}
+
+<constante> -> <const_Integer> {<const_Integer>} | <const_Bool> 
+
+<token> -> uno de <identificador> <constante> <palabraReservada>
+<operadorAditivo> <asignacion> <caracterDePuntuacion>
+
+<identificador> → SOY < LETRA o DIGITO o GUION > {< LETRA o DIGITO o GUION>}FIN_IDENTIFICADOR
+
+<constante> -> <const_Integer> {<const_Integer>} | <const_Bool> 
+
+< LETRA o DIGITO o GUION > → uno de <letra> <digito> GUIONES
+
+<letra > → una de a-z A-Z
+
+<digito> → uno de 0-9
+
+<palabraReservada> → una de inicio bold italic fin
+
+<operadores> → uno de OP_SUMA OP_RESTA, OP_IGUAL, OP_DISTINTO
+
+<asignacion> → =
+
+<caracterDePuntuacion> → uno de LLAVE_A, LLAVE_C, PARENTESIS_A, PARENTESIS_C
+—-----------
+
+typedef enum {
+INICIO, FIN, WHILE, FOR, ID, CONSTANTE, IF, OP_SUMA, OP_RESTA, OP_IGUAL, OP_DISTINTO, LLAVE_A, LLAVE_C, PARENTESIS_A, PARENTESIS_C, FIN_SETENCIA, IDENTIFICADOR, CONST_INTEGER, CONST_BOOL, DIGITO, LETRA, SOY, GUIONES, FIN_IDENTIFICADOR} TOKEN;
+BNF de identificador:
+
+Tokens: SOY, FIN_IDENTIFICADOR
+
+<LETRA> :: = a|b|c|d|e|f|g|h|i|g|k|l|m|n|o|p|q|r|s|t|u|v|x|w|y|z|A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|X|Y|Z
+
+<DIGITO> :: = 0|1|2|3|4|5|6|7|8|9
+
+<GUION> :: = -|_ 
+
+<identificador> ::= SOY < LETRA> | <DIGITO> |  <GUION >  {< LETRA> | < DIGITO> | <GUION> } FIN_IDENTIFICADOR
